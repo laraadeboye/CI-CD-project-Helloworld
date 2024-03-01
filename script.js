@@ -5,7 +5,7 @@ const hikeStrollButtons = document.querySelectorAll('.hikeStroll, .noHikeStroll'
 
     // Add event listeners to the buttons
     eatDrinkButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (eatDrink) => {
             if (button.classList.contains('eatDrink')) {
                 alert('Enjoy your coffee, water, or snacks!');
             } else {
